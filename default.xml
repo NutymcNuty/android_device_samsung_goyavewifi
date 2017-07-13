@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="nutymcnuty/android_device_samsung_goyavewifi" path="device/samsung/goyavewifi" remote="github" revision="cm-11" />
+  <project name="nutymcnuty/android_kernel_samsung_goyavewifi" path="kernel/samsung/goyavewifi" remote="github" revision="cm-11" />
+</manifest>
