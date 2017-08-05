@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit from the proprietary version
--include vendor/samsung/goyave3g/BoardConfigVendor.mk
+-include vendor/samsung/goyavewifi/BoardConfigVendor.mk
 
 # Platform
 TARGET_ARCH := arm
@@ -105,11 +105,11 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 
-TARGET_KERNEL_CONFIG := goyave3g_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/goyave3g
-TARGET_PREBUILT_KERNEL := device/samsung/goyave3g/kernel
+TARGET_KERNEL_CONFIG := goyavewifi_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/goyavewifi
+TARGET_PREBUILT_KERNEL := device/samsung/goyavewifi/kernel
 
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/goyave3g/dt.img
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/goyavewifi/dt.img
 
 # Init
 TARGET_NR_SVC_SUPP_GIDS := 24
@@ -121,7 +121,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := device/samsung/goyave3g/ramdisk/recovery.fstab
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SM-T116,goyave,goyawifi,goyave3g,goyavewifi
+TARGET_OTA_ASSERT_DEVICE := SM-T116,goyave,goyawifi,goyavewifi,goyavewifi
 
 # Use prebuilt webviewchromium to cut down build time
 PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
@@ -130,4 +130,4 @@ PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
 # WITH_DEXPREOPT := true
 
 # CMHW
-BOARD_HARDWARE_CLASS := device/samsung/goyave3g/cmhw/
+BOARD_HARDWARE_CLASS := device/samsung/goyavewifi/cmhw/
